@@ -1,0 +1,22 @@
+Neha Chavan
+neha.chavan@example.com | +91 90110 99887
+Aurangabad, Maharashtra
+
+Summary
+IT support graduate with good communication skills and experience helping users solve everyday computer problems. Keen to grow in the technology industry.
+
+Education
+B.Sc. in Information Technology, Government College of Arts and Science, 2021 - 2024
+
+Skills
+MS Office, Excel, Windows, Troubleshooting, Networking basics, Customer support, Basic SQL
+
+Experience
+IT Support Trainee, Sunrise Infotech, Aurangabad, Jul 2024 - Dec 2024
+- Resolved hardware and software issues for office staff and maintained a helpdesk log.
+- Installed Windows updates and configured printers and basic network connections.
+- Prepared simple Excel sheets to track inventory of computer equipment.
+- Trained new employees to use email and office applications.
+
+Projects
+- Helpdesk Ticket Tracker: created an Excel based tracker for user complaints.

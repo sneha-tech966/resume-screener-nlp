@@ -1,0 +1,23 @@
+Aarav Mehta
+Email: aarav.mehta@example.com | Phone: +91 98765 43210 | GitHub: https://github.com/aaravmehta
+Pune, Maharashtra, India
+
+Summary
+Final year Computer Science student with a strong interest in machine learning and data science. Experienced in building predictive models with Python, Pandas and Scikit-learn. Enjoys turning messy data into clear insights.
+
+Education
+B.Tech in Computer Science, Savitribai Phule Pune University, 2021 - 2025
+
+Skills
+Python, Machine Learning, Data Analysis, Pandas, NumPy, Scikit-learn, SQL, Matplotlib, Statistics, Git, Jupyter
+
+Experience
+Machine Learning Intern, DataNest Technologies, Pune, Jun 2024 - Aug 2024
+- Cleaned and analysed customer datasets using Pandas and NumPy.
+- Built a churn prediction model with Scikit-learn and improved recall by 12 percent.
+- Wrote SQL queries to extract training data from a PostgreSQL warehouse.
+- Used Git for version control and documented experiments for the team.
+
+Projects
+- House Price Prediction: trained regression models in Python and compared them using cross validation.
+- Customer Segmentation: applied machine learning clustering techniques on retail data and visualised results with Matplotlib.

@@ -1,0 +1,23 @@
+Meera Joshi
+meera.joshi@example.com | +91 97654 11223 | https://github.com/meerajoshi
+Pune, Maharashtra
+
+Summary
+Computer vision enthusiast interested in image recognition and deep learning. Has built convolutional neural networks for classification and object detection.
+
+Education
+B.E. in Electronics and Telecommunication, College of Engineering Pune, 2021 - 2025
+
+Skills
+Computer Vision, Deep Learning, Machine Learning, Python, OpenCV, TensorFlow, Keras, NumPy, CNN, Git
+
+Experience
+Computer Vision Intern, VisionWorks AI, Pune, Jun 2024 - Sep 2024
+- Trained convolutional neural networks with TensorFlow and Keras to classify product images.
+- Used OpenCV for image preprocessing, augmentation and object detection.
+- Improved model accuracy through hyperparameter tuning and data augmentation.
+- Managed project code and model versions using Git.
+
+Projects
+- Traffic Sign Recognition: a CNN built in Python that classifies road signs from camera images.
+- Face Mask Detection: real-time detection system using OpenCV and deep learning.

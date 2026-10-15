@@ -1,0 +1,24 @@
+Priya Nair
+priya.nair@example.com | +91 90000 11122 | https://www.linkedin.com/in/priyanair
+Bengaluru, Karnataka
+
+Summary
+Data analytics graduate who enjoys building dashboards and explaining business trends with data. Skilled in SQL, Excel and visual storytelling.
+
+Education
+B.Sc. in Statistics, Christ University, 2020 - 2023
+MBA in Business Analytics, Symbiosis Institute, 2023 - 2025
+
+Skills
+SQL, Python, Pandas, Excel, Power BI, Tableau, Data Analysis, Statistics, Data Visualization
+
+Experience
+Data Analyst Intern, BrightPath Analytics, Bengaluru, Jun 2023 - Sep 2023
+- Built interactive Power BI and Tableau dashboards for the sales team.
+- Performed data analysis on sales records using SQL and Pandas.
+- Automated monthly reports in Excel and reduced manual work by 30 percent.
+- Presented weekly business insights to senior managers.
+
+Projects
+- Retail Sales Dashboard: created a Power BI report showing revenue trends and regional performance.
+- Customer Survey Analysis: used statistics and Python to summarise survey responses.

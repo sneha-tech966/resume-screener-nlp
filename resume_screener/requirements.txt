@@ -1,0 +1,23 @@
+# Core NLP and ML
+numpy==2.4.6
+pandas==3.0.6
+nltk==3.10.3
+spacy==3.8.16
+scikit-learn==1.9.1
+gensim==4.4.0
+networkx==3.6.1
+matplotlib==3.11.2
+scipy==1.17.1
+
+# Web UI
+streamlit==1.66.0
+
+# PDF reading and forensics
+pypdf==6.20.1
+pymupdf==1.28.2
+
+# Optional: only needed to regenerate sample PDFs (tools/make_sample_pdfs.py, tools/make_trust_test_pdfs.py)
+# reportlab==5.0.1
+
+# After installing, download the spaCy English model:
+#   python -m spacy download en_core_web_sm

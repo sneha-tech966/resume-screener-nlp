@@ -1,0 +1,19 @@
+Machine Learning Intern
+Nimbus AI Labs, Pune, India
+
+About the Role
+Nimbus AI Labs is looking for a Machine Learning Intern to join our applied data team for a six month internship. You will work with senior engineers to clean data, build predictive models and present findings to the product team.
+
+Responsibilities
+- Collect, clean and explore datasets using Python, Pandas and NumPy.
+- Perform data analysis to find patterns and prepare features for machine learning models.
+- Build and evaluate machine learning models using Scikit-learn.
+- Write SQL queries to extract data from relational databases.
+- Work on simple NLP tasks such as text classification and information extraction.
+- Use Git for version control and collaborate through code reviews.
+
+Required Skills
+Python, Machine Learning, Data Analysis, Pandas, NumPy, Scikit-learn, SQL, Natural Language Processing (NLP), Git.
+
+Eligibility
+Final year students or recent graduates in Computer Science, Information Technology or a related field, with good communication skills and a strong interest in learning.

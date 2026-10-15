@@ -1,0 +1,23 @@
+Kabir Shaikh
+kabir.shaikh@example.com | +91 98220 33445 | https://github.com/kabirshaikh
+Nagpur, Maharashtra
+
+Summary
+Software developer with solid knowledge of object oriented programming and data structures. Enjoys building reliable backend applications in Java and C++.
+
+Education
+B.E. in Computer Science, Rashtrasant Tukadoji Maharaj Nagpur University, 2020 - 2024
+
+Skills
+Java, C++, C#, .NET, Spring Boot, OOP, Data Structures, MySQL, SQL, Git
+
+Experience
+Software Developer Intern, Orion Software Pvt Ltd, Nagpur, Jan 2024 - Jun 2024
+- Developed backend services using Java and Spring Boot for an inventory system.
+- Wrote C# and .NET modules for an internal billing tool.
+- Optimised MySQL queries and designed database tables.
+- Followed agile practices and managed code with Git.
+
+Projects
+- Library Management System: a desktop application in Java with MySQL storage.
+- Chess Engine: implemented game logic and search algorithms in C++.

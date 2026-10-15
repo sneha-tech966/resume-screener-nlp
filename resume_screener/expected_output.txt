@@ -1,0 +1,391 @@
+
+============================================================
+AUTOMATED RESUME SCREENER
+============================================================
+Job Description : Machine Learning Intern
+Number of Resumes: 10
+
+------------------------------------------------------------
+0. PREPROCESSING DEMO (Resume 1, one sentence)
+------------------------------------------------------------
+Normalized  : Final year Computer Science student with a strong interest in machine learning and data science.
+Tokens      : ['final', 'year', 'computer', 'science', 'student', 'strong', 'interest', 'machine_learning', 'data_science']
+Stems       : ['final', 'year', 'comput', 'scienc', 'student', 'strong', 'interest', 'machine_learn', 'data_sci']
+Lemmas      : ['final', 'year', 'computer', 'science', 'student', 'strong', 'interest', 'machine_learning', 'data_science']
+POS tags    : [('Final', 'JJ'), ('year', 'NN'), ('Computer', 'NNP'), ('Science', 'NNP'), ('student', 'NN'), ('with', 'IN'), ('a', 'DT')]
+(Tech terms such as C++, C#, .NET, Power BI are kept; 'Machine Learning' becomes the token 'machine_learning'.)
+
+------------------------------------------------------------
+1. RESUME INFORMATION
+------------------------------------------------------------
+
+Resume 1
+  Candidate Name : Aarav Mehta
+  Universities   : Savitribai Phule Pune University
+  Organizations  : DataNest Technologies
+  Locations      : Pune, Maharashtra, India
+  Dates          : Jun 2024 - Aug 2024
+  Job Titles     : Machine Learning Intern
+  Detected Skills: Machine Learning, Data Science, Python, Pandas, Scikit-learn, Data Analysis, NumPy, SQL, Matplotlib, Statistics, Git, Jupyter, PostgreSQL
+  Important Nouns: scikit-learn, models, customer, prediction, insights, datasets, churn, model
+
+Resume 2
+  Candidate Name : Sneha Kulkarni
+  Universities   : University of Mumbai
+  Organizations  : PixelCraft Studio
+  Locations      : Mumbai, India
+  Dates          : Jan 2024 - Jun 2024
+  Job Titles     : Web Developer Intern
+  Detected Skills: JavaScript, TypeScript, React, Node.js, HTML, CSS, Bootstrap, MongoDB, Git, GitHub
+  Important Nouns: node.js, developer, website, front-end, websites, stack, user, interfaces
+
+Resume 3
+  Candidate Name : Rohan Deshmukh
+  Universities   : Dr. Babasaheb Ambedkar Marathwada University
+  Organizations  : CyberShield Labs
+  Locations      : Aurangabad, Maharashtra
+  Dates          : May 2024 - Jul 2024
+  Job Titles     : Security Analyst Intern
+  Detected Skills: Network Security, Penetration Testing, Cryptography, Kali Linux, Wireshark, Linux, Firewall, Python, Git
+  Important Nouns: vulnerability, attacks, password, cybersecurity, defence, assessment, hacking, capture
+
+Resume 4
+  Candidate Name : Priya Nair
+  Universities   : Christ University, Symbiosis Institute
+  Organizations  : BrightPath Analytics
+  Locations      : Bengaluru, Karnataka
+  Dates          : Jun 2023 - Sep 2023
+  Job Titles     : Data Analyst Intern
+  Detected Skills: SQL, Excel, Statistics, Python, Pandas, Power BI, Tableau, Data Analysis, Data Visualization
+  Important Nouns: business, sales, dashboards, trends, survey, storytelling, analyst, records
+
+Resume 5
+  Candidate Name : Kabir Shaikh
+  Universities   : Rashtrasant Tukadoji Maharaj Nagpur University
+  Organizations  : Orion Software Pvt Ltd
+  Locations      : Nagpur, Maharashtra
+  Dates          : Jan 2024 - Jun 2024
+  Job Titles     : Software Developer Intern
+  Detected Skills: OOP, Data Structures, Java, C++, C#, .NET, Spring Boot, MySQL, SQL, Git
+  Important Nouns: c++, developer, system, object, programming, backend, applications, services
+
+Resume 6
+  Candidate Name : Ananya Iyer
+  Universities   : Anna University
+  Organizations  : LinguaTech Research
+  Locations      : Chennai, Tamil Nadu
+  Dates          : May 2024 - Aug 2024
+  Job Titles     : NLP Research Intern
+  Detected Skills: NLP, Deep Learning, Machine Learning, Python, Artificial Intelligence, Data Science, PyTorch, Scikit-learn, NumPy, NLTK, spaCy, Hugging Face, Git
+  Important Nouns: language, models, processing, scikit-learn, news, chatbot, text, analytics
+
+Resume 7
+  Candidate Name : Vikram Patil
+  Universities   : Osmania University
+  Organizations  : CloudNimbus Solutions
+  Locations      : Hyderabad, Telangana
+  Dates          : Feb 2024 - Jul 2024
+  Job Titles     : DevOps Engineer Intern
+  Detected Skills: AWS, Azure, Docker, Kubernetes, Jenkins, Terraform, CI/CD, Linux, Git, GitHub, Python
+  Important Nouns: devops, engineer, infrastructure, monitoring, scripts, pipeline, templates, cloud
+
+Resume 8
+  Candidate Name : Meera Joshi
+  Universities   : College of Engineering Pune
+  Organizations  : VisionWorks AI
+  Locations      : Pune, Maharashtra
+  Dates          : Jun 2024 - Sep 2024
+  Job Titles     : Computer Vision Intern
+  Detected Skills: Computer Vision, Deep Learning, CNN, Machine Learning, Python, OpenCV, TensorFlow, Keras, NumPy, Git
+  Important Nouns: detection, image, recognition, networks, images, augmentation, model, classification
+
+Resume 9
+  Candidate Name : Arjun Reddy
+  Universities   : Jawaharlal Nehru Technological University
+  Organizations  : DataBridge Systems
+  Locations      : Hyderabad, Telangana
+  Dates          : Jan 2024 - Jun 2024
+  Job Titles     : Backend Developer Intern
+  Detected Skills: SQL, MySQL, PostgreSQL, MongoDB, Redis, Node.js, Python, Flask, REST API, Docker, Git
+  Important Nouns: database, backend, developer, schemas, node.js, booking, services, apis
+
+Resume 10
+  Candidate Name : Neha Chavan
+  Universities   : Government College of Arts and Science
+  Organizations  : Sunrise Infotech
+  Locations      : Aurangabad, Maharashtra
+  Dates          : Jul 2024 - Dec 2024
+  Job Titles     : IT Support Trainee
+  Detected Skills: MS Office, Excel, Windows, SQL
+  Important Nouns: support, helpdesk, tracker, communication, users, problems, industry, troubleshooting
+
+------------------------------------------------------------
+2. TEXT REPRESENTATION
+------------------------------------------------------------
+A) Bag of Words (document-term matrix)
+   Vocabulary size : 490
+   Matrix shape    : (10, 490)
+   Preview (3 resumes x 6 terms):
+             aarav  accessible  accuracy  activity  added  agile
+   Resume 1      1           0         0         0      0      0
+   Resume 2      0           1         0         0      0      0
+   Resume 3      0           0         0         1      0      0
+
+B) TF-IDF
+   Matrix shape    : (10, 490)
+   Top informative terms per resume:
+   Resume 1  : Scikit-learn (0.20), Pandas (0.20), Machine Learning (0.20), prediction (0.19), Matplotlib (0.19)
+   Resume 2  : mumbai (0.22), responsive (0.22), website (0.22), React (0.22), Node.js (0.19)
+   Resume 3  : Firewall (0.22), security (0.22), network (0.19), Cryptography (0.18), password (0.18)
+   Resume 4  : Power BI (0.22), business (0.22), sale (0.22), analytics (0.19), dashboard (0.19)
+   Resume 5  : Java (0.26), nagpur (0.23), C++ (0.23), software (0.20), MySQL (0.20)
+   Resume 6  : NLP (0.29), spaCy (0.18), news (0.18), text (0.18), NLTK (0.18)
+   Resume 7  : Jenkins (0.22), AWS (0.22), pipeline (0.19), monitoring (0.18), CI/CD (0.18)
+   Resume 8  : image (0.26), CNN (0.26), OpenCV (0.23), Computer Vision (0.23), detection (0.22)
+   Resume 9  : Flask (0.23), MySQL (0.20), service (0.20), PostgreSQL (0.20), database (0.20)
+   Resume 10 : support (0.23), basic (0.23), Excel (0.20), office (0.19), Windows (0.19)
+
+C) Word2Vec (trained on resume sentences; tiny corpus -> indicative only)
+   Vocabulary size : 517   Vector size: 50
+   Vector('python') first 5 dims: [-0.398  0.165  0.221  0.146 -0.056]
+   Vector('machine_learning') first 5 dims: [-0.117 -0.662 -0.033  0.609 -0.143]
+   similarity(Pandas, NumPy) = 0.87
+   similarity(Machine Learning, Deep Learning) = 0.62
+   similarity(SQL, MySQL) = 0.64
+   similarity(Docker, Kubernetes) = 0.93
+   similarity(Python, JavaScript) = 0.26
+   Words closest to 'python': Pandas (0.68), NumPy (0.67), monitor (0.67), explore (0.64)
+
+------------------------------------------------------------
+3. JOB MATCHING
+------------------------------------------------------------
+Cosine similarity between each resume and the job description.
+NOTE: this is TEXTUAL SIMILARITY w.r.t. the supplied job description, not hiring accuracy.
+
+Rank Candidate   Name               TF-IDF Similarity
+-----------------------------------------------------
+1    Resume 1    Aarav Mehta                    0.462
+2    Resume 6    Ananya Iyer                    0.286
+3    Resume 8    Meera Joshi                    0.174
+4    Resume 4    Priya Nair                     0.168
+5    Resume 10   Neha Chavan                    0.114
+6    Resume 2    Sneha Kulkarni                 0.113
+7    Resume 9    Arjun Reddy                    0.098
+8    Resume 7    Vikram Patil                   0.089
+9    Resume 3    Rohan Deshmukh                 0.068
+10   Resume 5    Kabir Shaikh                   0.063
+
+Comparison of representations (cosine with job description):
+Candidate        BoW   TF-IDF  Word2Vec
+Resume 1       0.619    0.462     0.970
+Resume 2       0.146    0.113     0.727
+Resume 3       0.111    0.068     0.732
+Resume 4       0.244    0.168     0.854
+Resume 5       0.113    0.063     0.647
+Resume 6       0.445    0.286     0.928
+Resume 7       0.134    0.089     0.723
+Resume 8       0.251    0.174     0.810
+Resume 9       0.153    0.098     0.700
+Resume 10      0.129    0.114     0.757
+(Word2Vec averages are high for every resume because the corpus is tiny - TF-IDF is used for ranking.)
+
+------------------------------------------------------------
+4. SKILL ANALYSIS
+------------------------------------------------------------
+Skills required by the job description: Machine Learning, Python, Pandas, NumPy, Data Analysis, Scikit-learn, SQL, NLP, Git
+Skill coverage = matched required skills / total required skills x 100.
+This is a simple rule-based coverage measure, not a professional hiring assessment.
+
+Resume 1 (Aarav Mehta)
+  Matched   : Machine Learning, Python, Pandas, NumPy, Data Analysis, Scikit-learn, SQL, Git
+  Missing   : NLP
+  Additional: Data Science, Matplotlib, Statistics, Jupyter, PostgreSQL
+  Skill Match Percentage: 88.9%
+
+Resume 2 (Sneha Kulkarni)
+  Matched   : Git
+  Missing   : Machine Learning, Python, Pandas, NumPy, Data Analysis, Scikit-learn, SQL, NLP
+  Additional: JavaScript, TypeScript, React, Node.js, HTML, CSS, Bootstrap, MongoDB, GitHub
+  Skill Match Percentage: 11.1%
+
+Resume 3 (Rohan Deshmukh)
+  Matched   : Python, Git
+  Missing   : Machine Learning, Pandas, NumPy, Data Analysis, Scikit-learn, SQL, NLP
+  Additional: Network Security, Penetration Testing, Cryptography, Kali Linux, Wireshark, Linux, Firewall
+  Skill Match Percentage: 22.2%
+
+Resume 4 (Priya Nair)
+  Matched   : Python, Pandas, Data Analysis, SQL
+  Missing   : Machine Learning, NumPy, Scikit-learn, NLP, Git
+  Additional: Excel, Statistics, Power BI, Tableau, Data Visualization
+  Skill Match Percentage: 44.4%
+
+Resume 5 (Kabir Shaikh)
+  Matched   : SQL, Git
+  Missing   : Machine Learning, Python, Pandas, NumPy, Data Analysis, Scikit-learn, NLP
+  Additional: OOP, Data Structures, Java, C++, C#, .NET, Spring Boot, MySQL
+  Skill Match Percentage: 22.2%
+
+Resume 6 (Ananya Iyer)
+  Matched   : Machine Learning, Python, NumPy, Scikit-learn, NLP, Git
+  Missing   : Pandas, Data Analysis, SQL
+  Additional: Deep Learning, Artificial Intelligence, Data Science, PyTorch, NLTK, spaCy, Hugging Face
+  Skill Match Percentage: 66.7%
+
+Resume 7 (Vikram Patil)
+  Matched   : Python, Git
+  Missing   : Machine Learning, Pandas, NumPy, Data Analysis, Scikit-learn, SQL, NLP
+  Additional: AWS, Azure, Docker, Kubernetes, Jenkins, Terraform, CI/CD, Linux, GitHub
+  Skill Match Percentage: 22.2%
+
+Resume 8 (Meera Joshi)
+  Matched   : Machine Learning, Python, NumPy, Git
+  Missing   : Pandas, Data Analysis, Scikit-learn, SQL, NLP
+  Additional: Computer Vision, Deep Learning, CNN, OpenCV, TensorFlow, Keras
+  Skill Match Percentage: 44.4%
+
+Resume 9 (Arjun Reddy)
+  Matched   : Python, SQL, Git
+  Missing   : Machine Learning, Pandas, NumPy, Data Analysis, Scikit-learn, NLP
+  Additional: MySQL, PostgreSQL, MongoDB, Redis, Node.js, Flask, REST API, Docker
+  Skill Match Percentage: 33.3%
+
+Resume 10 (Neha Chavan)
+  Matched   : SQL
+  Missing   : Machine Learning, Python, Pandas, NumPy, Data Analysis, Scikit-learn, NLP, Git
+  Additional: MS Office, Excel, Windows
+  Skill Match Percentage: 11.1%
+
+------------------------------------------------------------
+5. INFORMATION RETRIEVAL
+------------------------------------------------------------
+Pipeline: query -> preprocessing -> TF-IDF vector -> cosine similarity vs resumes -> ranking
+
+Query: "Machine Learning Intern"   (preprocessed: machine_learning intern)
+  1. Resume 1  Aarav Mehta       score = 0.194
+  2. Resume 6  Ananya Iyer       score = 0.163
+  3. Resume 8  Meera Joshi       score = 0.094
+  4. Resume 5  Kabir Shaikh      score = 0.022
+  5. Resume 9  Arjun Reddy       score = 0.021
+
+Query: "Python machine learning data analyst"   (preprocessed: python machine_learning data analyst)
+  1. Resume 1  Aarav Mehta       score = 0.207
+  2. Resume 4  Priya Nair        score = 0.146
+  3. Resume 6  Ananya Iyer       score = 0.126
+  4. Resume 8  Meera Joshi       score = 0.106
+  5. Resume 3  Rohan Deshmukh    score = 0.087
+
+------------------------------------------------------------
+6. TEXTRANK SUMMARY
+------------------------------------------------------------
+
+Candidate: Resume 1 (Aarav Mehta)
+TextRank Summary:
+  "Experienced in building predictive models with Python, Pandas and Scikit-learn. Customer Segmentation: applied machine learning clustering techniques on retail data and visualised results with Matplotlib."
+
+Candidate: Resume 2 (Sneha Kulkarni)
+TextRank Summary:
+  "Online Food Ordering Website: a React and Node.js application with user login and cart features. Portfolio Website: a fast responsive site deployed with GitHub pages."
+
+Candidate: Resume 3 (Rohan Deshmukh)
+TextRank Summary:
+  "Monitored network traffic with Wireshark to detect suspicious activity and possible attacks. Intrusion Detection Lab: configured a firewall and monitored attacks in a virtual network."
+
+Candidate: Resume 4 (Priya Nair)
+TextRank Summary:
+  "Data analytics graduate who enjoys building dashboards and explaining business trends with data. Retail Sales Dashboard: created a Power BI report showing revenue trends and regional performance."
+
+Candidate: Resume 5 (Kabir Shaikh)
+TextRank Summary:
+  "Enjoys building reliable backend applications in Java and C++. Library Management System: a desktop application in Java with MySQL storage."
+
+Candidate: Resume 6 (Ananya Iyer)
+TextRank Summary:
+  "AI and natural language processing student passionate about language models and text analytics. Has hands-on experience with NLP pipelines, deep learning and machine learning in Python."
+
+Candidate: Resume 7 (Vikram Patil)
+TextRank Summary:
+  "Provisioned AWS and Azure infrastructure with Terraform scripts. Auto Scaling Web App: deployed a web application on AWS with load balancing and monitoring."
+
+Candidate: Resume 8 (Meera Joshi)
+TextRank Summary:
+  "Has built convolutional neural networks for classification and object detection. Used OpenCV for image preprocessing, augmentation and object detection."
+
+Candidate: Resume 9 (Arjun Reddy)
+TextRank Summary:
+  "Designed relational database schemas in PostgreSQL and MySQL for a booking platform. Hotel Booking API: a Flask and PostgreSQL service with authentication and payment records."
+
+Candidate: Resume 10 (Neha Chavan)
+TextRank Summary:
+  "Resolved hardware and software issues for office staff and maintained a helpdesk log. Helpdesk Ticket Tracker: created an Excel based tracker for user complaints."
+
+------------------------------------------------------------
+7. HIERARCHICAL CLUSTERING
+------------------------------------------------------------
+Method: cosine distance + average linkage on TF-IDF vectors
+Silhouette score per number of clusters: k=2: 0.051, k=3: 0.065, k=4: 0.062, k=5: 0.055
+Chosen k = 3 (highest silhouette = 0.065); an internal metric, not proof of 'correct' groups.
+
+Resume 1   -> Cluster 1   (Aarav Mehta)
+Resume 2   -> Cluster 0   (Sneha Kulkarni)
+Resume 3   -> Cluster 2   (Rohan Deshmukh)
+Resume 4   -> Cluster 1   (Priya Nair)
+Resume 5   -> Cluster 0   (Kabir Shaikh)
+Resume 6   -> Cluster 1   (Ananya Iyer)
+Resume 7   -> Cluster 2   (Vikram Patil)
+Resume 8   -> Cluster 1   (Meera Joshi)
+Resume 9   -> Cluster 0   (Arjun Reddy)
+Resume 10  -> Cluster 2   (Neha Chavan)
+Cluster 0 keywords: developer, MySQL, Node.js, backend
+Cluster 1 keywords: model, Machine Learning, Python, Pandas
+Cluster 2 keywords: Linux, network, aurangabad, script
+
+Dendrogram saved as: dendrogram.png
+
+------------------------------------------------------------
+8. DBSCAN (eps=0.88, min_samples=2, cosine distance)
+------------------------------------------------------------
+Resume 1   -> Cluster 0
+Resume 2   -> Cluster 1
+Resume 3   -> Cluster -1  <- noise / outlier
+Resume 4   -> Cluster 0
+Resume 5   -> Cluster 1
+Resume 6   -> Cluster 0
+Resume 7   -> Cluster -1  <- noise / outlier
+Resume 8   -> Cluster 0
+Resume 9   -> Cluster 1
+Resume 10  -> Cluster -1  <- noise / outlier
+Cluster 0 keywords: model, Machine Learning, Python, Pandas
+Cluster 1 keywords: developer, MySQL, Node.js, backend
+Noise/outliers (label -1): Resume 3, Resume 7, Resume 10
+
+------------------------------------------------------------
+9. TOPIC MODELLING (NMF on TF-IDF)
+------------------------------------------------------------
+Topic 1: model, Machine Learning, Deep Learning, Scikit-learn, pune, NLP, Python, NumPy
+         dominant in: Resume 1, Resume 6, Resume 8
+Topic 2: MySQL, developer, backend, service, database, designed, Node.js, Java
+         dominant in: Resume 2, Resume 5, Resume 9
+Topic 3: Linux, script, web, Jenkins, AWS, Firewall, security, pipeline
+         dominant in: Resume 3, Resume 7
+Topic 4: Excel, sale, business, Power BI, basic, support, SQL, Statistics
+         dominant in: Resume 4, Resume 10
+
+------------------------------------------------------------
+FINAL CANDIDATE COMPARISON
+------------------------------------------------------------
+Candidate  Name              Similarity  Skill Match %  Cluster  DBSCAN
+Resume 1   Aarav Mehta            0.462          88.9%        1       0
+Resume 6   Ananya Iyer            0.286          66.7%        1       0
+Resume 8   Meera Joshi            0.174          44.4%        1       0
+Resume 4   Priya Nair             0.168          44.4%        1       0
+Resume 10  Neha Chavan            0.114          11.1%        2      -1
+Resume 2   Sneha Kulkarni         0.113          11.1%        0       1
+Resume 9   Arjun Reddy            0.098          33.3%        0       1
+Resume 7   Vikram Patil           0.089          22.2%        2      -1
+Resume 3   Rohan Deshmukh         0.068          22.2%        2      -1
+Resume 5   Kabir Shaikh           0.064          22.2%        0       1
+
+Saved: candidate_analysis.csv, dendrogram.png
+
+Disclaimer: scores show textual similarity and keyword coverage only; they are not a hiring decision.

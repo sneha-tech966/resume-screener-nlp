@@ -1,0 +1,23 @@
+Arjun Reddy
+arjun.reddy@example.com | +91 98490 55667 | https://github.com/arjunreddy
+Hyderabad, Telangana
+
+Summary
+Backend and database developer who designs efficient schemas and reliable APIs. Interested in query optimisation and scalable data storage.
+
+Education
+B.Tech in Computer Science, Jawaharlal Nehru Technological University, 2020 - 2024
+
+Skills
+SQL, MySQL, PostgreSQL, MongoDB, Redis, Node.js, Python, Flask, REST API, Docker, Git
+
+Experience
+Backend Developer Intern, DataBridge Systems, Hyderabad, Jan 2024 - Jun 2024
+- Designed relational database schemas in PostgreSQL and MySQL for a booking platform.
+- Optimised slow SQL queries and added indexes to improve response time.
+- Built REST API services with Node.js and Flask.
+- Cached frequent requests in Redis and deployed services with Docker.
+
+Projects
+- Hotel Booking API: a Flask and PostgreSQL service with authentication and payment records.
+- Inventory Database: designed normalised MySQL tables and stored procedures.

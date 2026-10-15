@@ -1,0 +1,23 @@
+Ananya Iyer
+ananya.iyer@example.com | +91 97000 22334 | https://github.com/ananyaiyer
+Chennai, Tamil Nadu
+
+Summary
+AI and natural language processing student passionate about language models and text analytics. Has hands-on experience with NLP pipelines, deep learning and machine learning in Python.
+
+Education
+B.Tech in Artificial Intelligence and Data Science, Anna University, 2021 - 2025
+
+Skills
+Python, NLP, Natural Language Processing, Machine Learning, Deep Learning, PyTorch, Scikit-learn, NumPy, NLTK, spaCy, Hugging Face, Git
+
+Experience
+NLP Research Intern, LinguaTech Research, Chennai, May 2024 - Aug 2024
+- Built text classification models using Scikit-learn, NLTK and spaCy.
+- Fine-tuned transformer models for sentiment analysis with PyTorch and Hugging Face.
+- Implemented named entity recognition and topic modelling experiments in Python.
+- Maintained experiment code on Git and wrote short technical reports.
+
+Projects
+- Fake News Detector: applied NLP techniques and machine learning classifiers to news articles.
+- Question Answering Chatbot: developed a retrieval based chatbot using TF-IDF and cosine similarity.

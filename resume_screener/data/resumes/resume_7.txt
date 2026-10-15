@@ -1,0 +1,23 @@
+Vikram Patil
+vikram.patil@example.com | +91 98500 44556 | https://www.linkedin.com/in/vikrampatil
+Hyderabad, Telangana
+
+Summary
+Cloud and DevOps engineer who automates deployments and manages scalable infrastructure. Focused on reliability, monitoring and continuous delivery.
+
+Education
+B.Tech in Information Technology, Osmania University, 2020 - 2024
+
+Skills
+AWS, Azure, Docker, Kubernetes, Jenkins, Terraform, CI/CD, Linux, Git, GitHub, Python
+
+Experience
+DevOps Engineer Intern, CloudNimbus Solutions, Hyderabad, Feb 2024 - Jul 2024
+- Containerised microservices with Docker and deployed them on Kubernetes.
+- Created CI/CD pipelines using Jenkins and GitHub for automatic testing and release.
+- Provisioned AWS and Azure infrastructure with Terraform scripts.
+- Wrote Python scripts to monitor servers and automate Linux maintenance tasks.
+
+Projects
+- Auto Scaling Web App: deployed a web application on AWS with load balancing and monitoring.
+- Pipeline Templates: built reusable Jenkins pipeline templates for the engineering team.

@@ -1,0 +1,23 @@
+Rohan Deshmukh
+rohan.d@example.com | +91 99887 76655 | https://github.com/rohand-sec
+Aurangabad, Maharashtra
+
+Summary
+Cybersecurity enthusiast focused on network defence, vulnerability assessment and ethical hacking. Participates regularly in capture the flag competitions.
+
+Education
+B.Tech in Computer Engineering, Dr. Babasaheb Ambedkar Marathwada University, 2021 - 2025
+
+Skills
+Network Security, Penetration Testing, Cryptography, Kali Linux, Wireshark, Linux, Firewall, Python, Git
+
+Experience
+Security Analyst Intern, CyberShield Labs, Pune, May 2024 - Jul 2024
+- Performed vulnerability scans and penetration testing on internal web applications.
+- Monitored network traffic with Wireshark to detect suspicious activity and possible attacks.
+- Wrote Python scripts to automate log analysis and report security incidents.
+- Documented firewall rules and recommended security improvements.
+
+Projects
+- Intrusion Detection Lab: configured a firewall and monitored attacks in a virtual network.
+- Password Cracking Study: compared cryptography techniques and password hashing methods.

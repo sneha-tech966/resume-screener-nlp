@@ -1,0 +1,23 @@
+Sneha Kulkarni
+sneha.k@example.com | +91 91234 56780 | https://www.linkedin.com/in/snehakulkarni
+Mumbai, India
+
+Summary
+Front-end focused web developer who builds responsive and accessible websites. Comfortable with the full JavaScript stack and passionate about clean user interfaces.
+
+Education
+B.E. in Information Technology, University of Mumbai, 2020 - 2024
+
+Skills
+JavaScript, TypeScript, React, Node.js, HTML, CSS, Bootstrap, MongoDB, Git, GitHub
+
+Experience
+Web Developer Intern, PixelCraft Studio, Mumbai, Jan 2024 - Jun 2024
+- Developed reusable React components for an e-commerce dashboard.
+- Designed responsive layouts with HTML, CSS and Bootstrap for mobile and desktop.
+- Built REST endpoints using Node.js and stored data in MongoDB.
+- Collaborated with designers through GitHub pull requests and Git branching.
+
+Projects
+- Online Food Ordering Website: a React and Node.js application with user login and cart features.
+- Portfolio Website: a fast responsive site deployed with GitHub pages.
